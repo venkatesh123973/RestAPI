@@ -10,11 +10,11 @@ import org.testng.annotations.BeforeClass;
 
 public class Base {
 
-    RequestSpecification req;
+    public RequestSpecification req;
 
-    ResponseSpecification resp_spec_200;
+   public ResponseSpecification resp_spec_200;
 
-    ResponseSpecification resp_spec_201;
+   public ResponseSpecification resp_spec_201;
 
     @BeforeClass
     public void setup()

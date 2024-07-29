@@ -5,7 +5,6 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -15,21 +14,19 @@ public class JIRA_API_Basic_Auth_Map {
 
     @Test
     public void createIssue() {
-        Map<String,String> project = new LinkedHashMap<>();
-        project.put("id","10000");
+        Map<String, String> project = new LinkedHashMap<>();
+        project.put("id", "10000");
 
-        Map<String,Object> issuetype = new LinkedHashMap<>();
-        issuetype.put("id","10002");
+        Map<String, Object> issuetype = new LinkedHashMap<>();
+        issuetype.put("id", "10002");
 
-        Map<String,Object> fields = new LinkedHashMap<>();
-        fields.put("project",project);
-        fields.put("summary","Added issue for Jira API");
-        fields.put("issuetype",issuetype);
+        Map<String, Object> fields = new LinkedHashMap<>();
+        fields.put("project", project);
+        fields.put("summary", "Added issue for Jira API");
+        fields.put("issuetype", issuetype);
 
-        Map<String,Object> payload = new LinkedHashMap<>();
-        payload.put("fields",fields);
-
-
+        Map<String, Object> payload = new LinkedHashMap<>();
+        payload.put("fields", fields);
 
 
         Response resp =
