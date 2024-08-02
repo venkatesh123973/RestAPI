@@ -10,7 +10,7 @@ public class petStoreCRUD extends petstorebase {
 
     @Test(priority = 0)
     public void createuser() {
-        Response response = RestAssured.given().spec(req).body("{\n" +
+        Response response = RestAssured.given().spec(req).header("Content-Type", "application/json").body("{\n" +
                 "  \"id\": 787,\n" +
                 "  \"username\": \"Venkat\",\n" +
                 "  \"firstName\": \"Venkat\",\n" +
@@ -18,7 +18,7 @@ public class petStoreCRUD extends petstorebase {
                 "  \"email\": \"kan@gmail.com\",\n" +
                 "  \"password\": \"9898\",\n" +
                 "  \"phone\": \"909087865\",\n" +
-                "  \"userStatus\": true\n" +
+                "  \"userStatus\": 1\n" +
                 "}").when().post("/user");
 
         System.out.println("Response: " + response.jsonPath().prettyPrint());
