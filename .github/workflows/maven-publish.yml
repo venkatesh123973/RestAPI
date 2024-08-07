@@ -26,3 +26,41 @@ jobs:
     - name: Running test on linux
       run: mvn clean test
 
+
+  
+  APITestonWindows:
+
+    runs-on: windows-latest
+    
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setting up JDK 11 for execution
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        
+
+    - name: Running test on windows
+      run: mvn clean test
+
+  APITestonMac:
+
+    runs-on: macos-latest
+    
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setting up JDK 11 for execution
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        
+
+    - name: Running test on mac
+      run: mvn clean test
+
+
+
