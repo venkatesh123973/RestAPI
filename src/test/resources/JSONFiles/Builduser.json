@@ -1,0 +1,32 @@
+[
+  {
+    "id": 787,
+    "username": "Venkat",
+    "firstName": "Venkat",
+    "lastName": "Kannan",
+    "email": "kan@gmail.com",
+    "password": "9898",
+    "phone": "909087865",
+    "userStatus": true
+  },
+  {
+    "id": 789,
+    "username": "Venkat",
+    "firstName": "Rohit",
+    "lastName": "Sharma",
+    "email": "shar@gmail.com",
+    "password": "9898",
+    "phone": "909087865",
+    "userStatus": true
+  },
+  {
+    "id": 800,
+    "username": "Venkat",
+    "firstName": "Virat",
+    "lastName": "Kohli",
+    "email": "kohli@gmail.com",
+    "password": "9898",
+    "phone": "909087865",
+    "userStatus": true
+  }
+]
