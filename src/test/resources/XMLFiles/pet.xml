@@ -1,0 +1,18 @@
+<Pet>
+    <id>786</id>
+    <Category>
+        <id>111</id>
+        <name>Dogs</name>
+    </Category>
+    <name>doggie</name>
+    <photoUrls>
+        <photoUrl>https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg</photoUrl>
+    </photoUrls>
+    <tags>
+        <Tag>
+            <id>101</id>
+            <name>Dogs</name>
+        </Tag>
+    </tags>
+    <status>available</status>
+</Pet>
