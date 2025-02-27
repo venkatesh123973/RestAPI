@@ -27,46 +27,11 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '11'
 
       - name: Build with Maven
         run: mvn clean test
 
 
   
-  APITestonWindows:
-
-    runs-on: windows-latest
-    needs: seleniumTestonLinux
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Setting up JDK 11 for execution
-      uses: actions/setup-java@v4
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-        
-
-    - name: Running test on windows
-      run: mvn clean test
-
-  APITestonMac:
-
-    runs-on: macos-latest
-    needs: APITestonWindows
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Setting up JDK 11 for execution
-      uses: actions/setup-java@v4
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-        
-
-    - name: Running test on mac
-      run: mvn clean test
-
-
-
+  
